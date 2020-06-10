@@ -26,6 +26,15 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j8
 ```
 
+### Build x64 VS
+```
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -A x64 -T host=x64
+
+build the solution .sln using VisualStudio
+```
+
 ### Run
 The input is a random triangle mesh in obj/off format. The output is a watertight manifold mesh in obj format.
 ```
